@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>easyVerein VR-Banking Converter</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<h1>easyVerein Volksbank/Raiffeisenbank/KD Bank Konvertierung</h1>
+		<ol>
+			<li>
+				In easyVerein unter &quot;Finanzen/Offene und anstehende Posten&quot; rechts oberhalb der
+				Liste auf &quot;Filterfunktion&quot; klicken.
+			</li>
+			<li>
+				Auf &quot;+ Neue Regel&quot; klicken und die Regel &quot;Zahlungsart gleich
+				Lastschrift&quot; hinzufügen.
+			</li>
+			<li>In dem Modaldialog unten rechts auf &quot;Anwenden&quot; klicken.</li>
+			<li>
+				Die Liste sollte nun eingeschränkt sein auf alle Mitglieder, die per Lastschrift zahlen.
+			</li>
+			<li>
+				Nun am Ende der Liste den Haken &quot;Alle offenen Ausgangsrechnungen auswählen&quot;
+				setzen.
+			</li>
+			<li>Unten rechts auf &quot;Lastschrifteinzug generieren (PAIN.008)&quot; klicken.</li>
+			<li>
+				Im aufgehenden Modaldialog alle Daten überprüfen, das &quot;Einzugsdatum&quot; setzen und
+				überprüfen, ob &quot;PAIN Standard&quot; auf &quot;SEPA Pain.008.001.02&quot; gesetzt ist.
+			</li>
+			<li>
+				Anschließend unten auf &quot;Sammellastschrift&quot; klicken. Die Sammellastschrift wird nun
+				im Hintergrund generiert.
+			</li>
+			<li>
+				Sobald die Generierung fertig ist, wird ein Eintrag im Menü &quot;Laufende &amp;
+				abgeschlossene Hintergrundprozesse&quot; generiert. Dort kann eine Datei mit der Dateiendung
+				&quot;.xml&quot; heruntergeladen werden. Diese bitte lokal auf dem Computer speichern.
+			</li>
+			<li>
+				Die Datei bitte hier hochladen:<br /><br />
+				<input type="file" id="file" accept="text/xml" />
+			</li>
+			<li>
+				Bitte nach erfolgreicher Auswahl der Datei auf den Knopf &quot;Konvertieren&quot; drücken
+				und die erzeugte &quot;.csv&quot;-Datei ebenfalls lokal auf dem Computer speichern.<br /><br />
+				<button id="upload">Konvertieren</button>
+				<div id="error"></div>
+			</li>
+			<li>Bitte das Online-Banking öffnen und einloggen.</li>
+			<li>Im Hauptmenü den Menüpunkt &quot;Vorlagen&quot; auswählen.</li>
+			<li>Im Untermenü auf der linken Seite &quot;Lastschriftvorlagen&quot; auswählen.</li>
+			<li>
+				Auf das Dreipunktmenü auf der rechten Seite klicken und den Menüpunkt &quot;Vorlagen
+				importieren&quot; auswählen.
+			</li>
+			<li>
+				Auf den Knopf &quot;Vorlagen hochladen&quot; klicken und anschließend die lokal gespeicherte
+				&quot;.csv&quot;-Datei auswählen.
+			</li>
+			<li>
+				Auf dem nächsten Bildschirm die erzeugten Vorlagen überprüfen und auch die Gesamtanzahl
+				prüfen.
+			</li>
+			<li>Auf den Hauptmenüpunkt &quot;Lastschrift&quot; klicken.</li>
+			<li>Im Untermenü auf der linken Seite &quot;Sammellastschrift&quot; auswählen.</li>
+			<li>
+				&quot;Bezeichnung&quot;, &quot;Fällig am&quot; und &quot;Ausführungsart&quot; ausfüllen und
+				anschließend auf &quot;Posten aus Vorlagen hinzufügen&quot; klicken.
+			</li>
+			<li>
+				Im nächsten Bildschirm alle Vorlagen, die vorher erzeugt wurden auswählen und unten rechts
+				am Ende der Liste &quot;x Vorlagen hinzufügen&quot; klicken.
+			</li>
+			<li>
+				im nächsten Bildschirm alles noch einmal überprüfen und auf &quot;Überprüfen und
+				Beauftragen&quot; klicken.
+			</li>
+			<li>Anschließend je nach Bedarf die angelegten Lastschriftvorlagen löschen.</li>
+		</ol>
+		<script src="./scripts.js"></script>
+	</body>
+</html>

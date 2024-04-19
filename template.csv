@@ -1,0 +1,2 @@
+﻿Vorlagenbezeichnung;IBAN des Zahlungsempfängers;IBAN des Zahlungspflichtigen;BIC;Kreditinstitut;Zahlungspflichtiger;Straße;Gebäude Nr.;Postleitzahl;Stadt;Land;Länderkennzeichen;Betrag;Verwendungszweck;LastschriftArt;Mandatsart;Mandatsreferenz;Gläubiger-ID;unterschrieben am;Abweichender Zahlungsempfänger
+Mustermann Max;DE11741910000000099988;DE86741910000000099996;GENODEF1LND;;Mustermann Max;;;;;;;35;Jahresbeitrag;Basis-Lastschrift;wiederholend;4711;DE99ZZZ00000009999;01.07.2020;

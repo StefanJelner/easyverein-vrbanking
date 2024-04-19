@@ -1,0 +1,19 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+li + li {
+	margin-top: 16px;
+}
+
+#error > * {
+	background-color: red;
+	font-family: inherit !important;
+	font-size: inherit !important;
+	margin: 0;
+	padding: 16px;
+}
+
+#error > *:first-child {
+	margin-top: 16px;
+}
